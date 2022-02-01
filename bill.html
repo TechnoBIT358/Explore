@@ -1,0 +1,461 @@
+<html>
+<head>
+<title> bill </title>
+<style>
+#a
+{
+position:absolute;
+top:0%;
+left:0%;
+height:100%;
+width:100%;
+
+}
+#a1
+{
+position:absolute;
+top:0%;
+left:0%;
+height:100%;
+width:100%;
+background-color:transparent;
+}
+#bill
+{
+position:absolute;
+top:15%;
+left:50%;
+height:75%;
+width:40%;
+background-color:rgba(45,17,39,1);
+border-radius:10px;
+}
+.bb{
+position:absolute;
+left:5%;
+height:5%;
+width:90%;
+background-color:rgba(54,116,177,1);
+border-radius:10px;
+line-height:1.5;
+}
+#b1{top:15%; }
+#b2{top:25%; }
+#b3{top:35%; }
+#b4{top:45%; }
+#b5{top:55%; }
+#b6{top:65%; }
+#b7{top:75%; }
+.bd
+{
+position:absolute;
+bottom:5%;
+height:5%;
+width:40%;
+background-color:rgba(54,116,177,1);
+border-radius:10px;
+line-height:1.5;
+cursor:pointer;
+}
+#b8{
+left:5%;
+visibility:hidden;
+}
+#b9{
+right:5%;
+}
+
+
+#bm
+{
+position:fixed;
+top:40%;
+right:3%;
+height:55%;
+width:5%;
+background:transparent;
+}
+.r{
+position:absolute;
+height:20%;
+width:100%;
+left:0%;
+}
+#bm1{
+top:0%;
+}
+
+#bm2{
+top:19%;
+}
+#bm3{
+top:40%;
+}
+#bm4{
+top:62%;
+}
+#bm5{
+bottom:0%;
+}
+</style>
+<script>
+function prod1()
+{
+var z;
+z=document.getElementById("p1").value;
+   if(z=='DELHI')
+   {
+   bb2=7999;
+   bb1='DELHI';
+   }
+   else  if(z=='MUMBAI')
+   {
+   bb2=9999;
+   bb1='MUMBAI';
+   }
+   else  if(z=='KOLKATA')
+   {
+   bb2=6999;
+   bb1='KOLKATA';
+   }
+   else  if(z=='CHENNAI')
+   {
+   bb2=8999;
+   bb1='CHENNAI';
+   }
+   else
+   {
+   bb2=0;
+   bb1='';
+   }
+   document.getElementById("bb2").value=bb2;
+   document.getElementById("bb1").value=bb1;
+}
+function prod2()
+{
+var z;
+z=document.getElementById("p2").value;
+   if(z=='AC')
+   {
+   bb3=5000;
+   }
+   else  if(z=='NON AC')
+   {
+   bb3=2500;
+   }
+   
+   else
+   {
+   bb3=0;
+   }
+   document.getElementById("bb3").value=bb3;
+}
+function prod3()
+{
+var z;
+z=document.getElementById("p3").value;
+   if(z=='1')
+   {
+   bb4=1;
+   }
+   else  if(z=='2')
+   {
+   bb4=2;
+   }
+   else  if(z=='3')
+   {
+   bb4=3;
+   }
+   else  if(z=='4')
+   {
+   bb4=4;
+   }
+   else
+   {
+   bb4=0;
+   }
+   document.getElementById("bb4").value=bb4;
+}
+function prod4()
+{
+var z;
+z=document.getElementById("p4").value;
+   if(z=='1')
+   {
+   bb5=1;
+   }
+   else  if(z=='2')
+   {
+   bb5=2;
+   }
+   else  if(z=='3')
+   {
+   bb5=3;
+   }
+   else  if(z=='4')
+   {
+   bb5=4;
+   }
+   else
+   {
+   bb5=0;
+   }
+   document.getElementById("bb5").value=bb5;
+}
+function prod5()
+{
+var z;
+z=document.getElementById("p5").value;
+   if(z=='0')
+   {
+   bb6=0;
+   }
+   else  if(z=='1')
+   {
+   bb6=1;
+   }
+   else  if(z=='2')
+   {
+   bb6=2;
+   }
+   else  if(z=='3')
+   {
+   bb6=3;
+   }
+   else  if(z=='4')
+   {
+   bb6=4;
+   }
+   else
+   {
+   bb6=0;
+   }
+   document.getElementById("bb6").value=bb6;
+}
+function clr()
+{
+				document.getElementById("bb1").value="";
+				document.getElementById("bb2").value="";
+				document.getElementById("bb3").value="";
+				document.getElementById("bb4").value="";
+				document.getElementById("bb5").value="";
+				document.getElementById("bb6").value="";
+				document.getElementById("bb7").value="";
+				
+}
+function namecheck()
+{ var nf,nc;
+nf=document.getElementById("nf").value;
+nc=/^[A-Za-z ]+$/;
+
+if(!nf.match(nc)||nf.charAt(0)==' ')
+{document.getElementById("ns").innerHTML="X";
+return 0;}
+else
+{document.getElementById("ns").innerHTML="";
+return 1;} }
+
+function emailcheck()
+{ var em,ec;
+em=document.getElementById("em").value;
+ec=/^[a-zA-Z0-9._-]+\@[a-zA-Z0-9]+\.[a-zA-Z]{2,6}$/;
+
+if(!em.match(ec))
+{document.getElementById("emm").innerHTML="X";return 0;}
+else
+{document.getElementById("emm").innerHTML="";
+return 1;} }
+
+function phcheck()
+{ var con,pc;
+con=document.getElementById("con").value;
+pc=/^[0-9]{10,10}$/;
+if(!con.match(pc))
+{document.getElementById("phh").innerHTML="Invalid Phone";return 0;}
+else
+{document.getElementById("phh").innerHTML="";
+return 1;} }
+
+	function datecheck()
+{
+var d,sd,ed,h;
+d=document.getElementById("db").value;
+sd=new Date();
+ed=new Date(d);
+h=(ed.getFullYear()*365 + ed.getMonth()*30 + ed.getDate() )-(sd.getFullYear()*365 + sd.getMonth()*30 + sd.getDate() );
+
+
+if(h>90 || h<=0 || d=='' )
+{
+document.getElementById("ds").innerHTML="X";
+return 0;
+}
+else
+{
+ed.setDate(ed.getDate()+3)
+d=ed.getDate();
+m=ed.getMonth();
+y=ed.getFullYear();
+if(m<10)
+{
+m="0"+m;
+}
+
+if(d<10)
+{
+d="0"+d;
+}
+
+document.getElementById("co").value=y+"-"+m+"-"+d;
+document.getElementById("ds").innerHTML="";
+return 1;
+
+}
+}
+	function valid()
+	{
+	 if(namecheck()==1 && emailcheck()==1 && phcheck()==1 && datecheck()==1 )
+	 {
+	 var b1=document.getElementById("bb1").value; 
+	 var b2=document.getElementById("bb2").value; 
+	 var b3=document.getElementById("bb3").value; 
+	 var b4=document.getElementById("bb4").value; 
+	 var b5=document.getElementById("bb5").value; 
+	 var b6=document.getElementById("bb6").value; 
+	 if(b1!=0 && b2!=0 && b3!=0 && b4!=0 && b5!=0  )
+	 {
+	 
+	 var amt;
+amt=b2*b5 + b2*b6 + b3*b4 ;
+document.getElementById("bb7").value=amt; 
+document.getElementById("b8").style.visibility="visible";
+	 }
+	 else
+	 {
+	 alert(" select booking ");
+	 }
+	 
+	 }
+else
+{
+namecheck();
+emailcheck();
+phcheck();
+datecheck();
+
+alert("enter valid details");
+}
+
+	
+	}
+</script>
+</head>
+<body>
+<div id="a"><img src="key1.jpg" width="100%" height="100%">
+<div id="a1">
+<h1><center><font color="white"> BILL </h1> </center></font>  <br> <br>
+<b><font color="white">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp NAME: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspSELECT YOUR PACKAGE:<br>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="nf" placeholder="Full Name" onblur="namecheck()"> <span id="ns" style="color:red"></span>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<select id="p1" onchange="prod1()">
+		<option value="SELECT">select package of your choice....</option>
+		<option value="DELHI">DELHI</option>
+		<option value="MUMBAI">MUMBAI</option>
+		<option value="KOLKATA">KOLKATA</option>
+		<option value="CHENNAI">CHENNAI</option>
+		</select>
+		
+
+
+<br> <br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspEMAIL:
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ROOM TYPE:<br>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="em" placeholder="example@gmail.com" onblur="emailcheck()"><span id="emm" style="color:red"></span> 
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<select id="p2" onchange="prod2()">
+		<option value="SELECT">select room of your choice....</option>
+		<option value="AC">AC</option>
+		<option value="NON AC">NON AC</option>
+		</select>
+<br> <br>
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCONTACT NO.:
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+NO.OF ROOM:<br>
+
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="text" id="con" placeholder="Phone no." onblur="phcheck()"><span id="phh" style="color:red"></span> 
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<select id="p3" onchange="prod3()">
+		<option value="SELECT">select number of room.....</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		</select>
+<br> <br>
+
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCHECK IN: 
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+ADULTS:<br>
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="date" id="db"onblur="datecheck()"><span id="ds" style="color:red"></span>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<select id="p4" onchange="prod4()">
+		<option value="SELECT">select number of Adults.....</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		</select>
+<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCHECK OUT: 
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+CHILDRENS:<br>
+
+<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input type="date" id="co" readonly>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<select id="p5" onchange="prod5()">
+		<option value="SELECT">select number of children...</option>
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		</select>
+<br><br>
+<br><br>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<button onclick="valid()" id="s">submit</button>
+<div id="bill">
+<div id="b1" class="bb">&nbsp&nbsp&nbsp&nbspPACKAGE:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <input type="text" value="0" id="bb1" readonly></div>
+<div id="b2" class="bb">&nbsp&nbsp&nbsp&nbspFARE PER PERSON:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input value="0" type="text" id="bb2" readonly></div>
+<div id="b3" class="bb">&nbsp&nbsp&nbsp&nbspHOTEL CHARGE:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input value="0" type="text" id="bb3" readonly></div>
+<div id="b4" class="bb">&nbsp&nbsp&nbsp&nbspNO. OF ROOMS:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input value="0" type="text" id="bb4" readonly></div>
+<div id="b5" class="bb">&nbsp&nbsp&nbsp&nbspNO. OF ADULTS:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input value="0" type="text" id="bb5" readonly></div>
+<div id="b6" class="bb">&nbsp&nbsp&nbsp&nbspNO. OF CHILDREN:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input value="0" type="text" id="bb6" readonly></div>
+<div id="b7" class="bb">&nbsp&nbsp&nbsp&nbsp YOU PAY:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<input value="0" type="text" id="bb7" readonly></div>
+
+<div id="b8" class="bd"><a href="pay.html" style="text-decoration:none; color:white;"><center>PAY</center></a></div>
+<div id="b9" class="bd" onclick="clr()"><center >REPLAN</center></div>
+
+
+
+
+
+
+</div>
+
+</b>
+</font>
+</div>
+</div>
+ <div id="bm">
+<div id="bm1" class="r"> <a href="index.html">  <img src="h.png" width="100%" height="100%" id="i1"> </a> </div> 
+<div id="bm2" class="r"> <a href="gallery2.html"> <img src="map.png" width="100%" height="100%" id="i2"> </a> </div> 
+<div id="bm3" class="r"> <a href="package.html"><img src="pac1.png" width="100%" height="100%" id="i3"></a> </div> 
+<div id="bm4" class="r"> <a href="bill.html"><img src="book.png" width="100%" height="100%" id="i4"> </a> </div>
+<div id="bm5" class="r"> <a href="contact.html"><img src="contact.png" width="100%" height="100%" id="i5"></a> </div>
+</div>
+</body>
+</html>

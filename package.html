@@ -1,0 +1,299 @@
+<html>
+<head>
+<title> packages </title>
+<style>
+#a{
+position:absolute;
+top:0%;
+left:0%;
+height:80%;
+width:100%;
+}
+#b
+{
+position:absolute;
+top:80%;
+left:0%;
+height:10%;
+width:100%;
+background-color:silver;
+}
+.m{
+position:absolute;
+height:100%;
+width:25%;
+top:0%;
+background-color:gray;
+color:white;
+cursor:pointer;
+line-height:4;
+}
+.m:hover { background-color:transparent;}
+#b1{
+left:0%;
+}
+
+#b2{
+left:25%;
+}
+#b3{
+left:50%;
+}
+#b4{
+right:0%;
+}
+
+.l
+{
+position:absolute;
+top:90%;
+left:0%;
+height:130%;
+width:100%;
+background-color:rgba(22,92,137,1);
+overflow:hidden;
+}
+#c1{
+visibility:visible;
+}
+#c2{
+visibility:hidden;
+}
+#c3{
+visibility:hidden;
+}
+#c4{
+visibility:hidden;
+}
+
+#d{
+position:absolute;
+top:220%;
+left:0%;
+height:20%;
+width:100%;
+background-color:black;
+}
+#d1{
+position:absolute;
+top:30%;
+left:10%;
+height:40%;
+width:35%;
+background-color:GRAY;
+line-height:3;
+cursor:pointer;
+}
+#d2{
+position:absolute;
+top:30%;
+right:10%;
+height:40%;
+width:35%;
+background-color:GRAY;
+line-height:3;
+cursor:pointer;
+}
+.p
+{
+position:absolute;
+top:30%;
+height:40%;
+width:20%;
+background-color:white;
+cursor:pointer;
+}
+.p:hover{ background-color:pink; border-radius:10px;}
+{
+
+}
+#c11{
+left:10%;
+}
+#c12{
+left:40%;
+}
+#c13{
+right:10%;
+}
+.p1{
+position:absolute;
+top:5%;
+height:50%;
+width:90%;
+left:5%;
+background-color:pink;
+cursor:pointer;
+}
+.p111{
+position:absolute;
+bottom:5%;
+height:35%;
+width:90%;
+left:5%;
+background-color:aqua;
+cursor:pointer;
+}
+#mar
+{
+position:absolute;
+bottom:10%;
+height:10%;
+width:100%;
+left:0%;
+background-color:grad;
+}
+.but{
+border-radius:10px;
+}
+.but:hover{ background-color:yellow;}
+
+#bbb
+{
+position:fixed;
+top:40%;
+left:0%;
+height:55%;
+width:5%;
+background:transparent;
+}
+.r{
+position:absolute;
+height:20%;
+width:100%;
+left:0%;
+}
+#b11{
+top:0%;
+}
+
+#b21{
+top:19%;
+}
+#b31{
+top:40%;
+}
+#b41{
+top:62%;
+}
+#b51{
+bottom:0%;
+}
+</style>
+<script>
+var a=new Array('p11.jpg','p.jpg','p2.jpg','p3.jpg');
+var i=0;
+function slider()
+{
+if (i<3)
+{
+i++;
+}
+else
+{
+i=0;
+}
+document.getElementById("i").src=a[i];
+setTimeout("slider()",3000);
+}
+function showd()
+{
+	document.getElementById("c1").style.visibility="visible";
+	document.getElementById("c2").style.visibility="hidden";
+	document.getElementById("c3").style.visibility="hidden";
+	document.getElementById("c4").style.visibility="hidden";
+}
+function showm()
+{
+	document.getElementById("c2").style.visibility="visible";
+	document.getElementById("c1").style.visibility="hidden";
+	document.getElementById("c3").style.visibility="hidden";
+	document.getElementById("c4").style.visibility="hidden";
+}
+function showk()
+{
+	document.getElementById("c3").style.visibility="visible";
+	document.getElementById("c2").style.visibility="hidden";
+	document.getElementById("c1").style.visibility="hidden";
+	document.getElementById("c4").style.visibility="hidden";
+}
+function showc()
+{
+	document.getElementById("c4").style.visibility="visible";
+	document.getElementById("c1").style.visibility="hidden";
+	document.getElementById("c2").style.visibility="hidden";
+	document.getElementById("c3").style.visibility="hidden";
+}
+
+
+
+</script>
+</head>
+<body onload="slider()">
+<div id="a"><img src="p11.jpg" width="100%" height="100%" id="i"> </div>
+<div id="b">
+<div id="b1" class="m" onclick="showd()"><center>DELHI </center></div>
+<div id="b2" class="m" onclick="showm()"><center> MUMBAI</center> </div>
+<div id="b3" class="m" onclick="showk()"><center> KOLKATA</center> </div>
+<div id="b4" class="m" onclick="showc()"><center> CHENNAI</center> </div>
+</div>
+<div id="c" class="l"> </div>
+<div id="c1" class="l">
+<br> <br><h1><center><font color="white">DELHI</font></center></h1><br><hr>
+<font color="white" size="4"><p>Delhi, India’s capital territory, is a massive metropolitan area in the country’s north. In Old Delhi, a neighborhood dating to the 1600s, stands the imposing Mughal-era Red Fort, a symbol of India, and the sprawling Jama Masjid mosque, whose courtyard accommodates 25,000 people. Nearby is Chandni Chowk, a vibrant bazaar filled with food carts, sweets shops and spice stalls.
+</p> <br> <br></font>
+<div id="c11" class="p"><div id="c111" class="p1"><img src="delhi1.png" width="100%" height="100%"></div><div id="c1111" class="p111"><br><br><b><center>3 days 2 night package starting @2999 per person.<b></center></div></div>
+<div id="c12" class="p"><div id="c222" class="p1"><img src="delhi2.jpg" width="100%" height="100%"></div><div id="c1111" class="p111"><br><br><b><center>3 days 2 night package starting @4999 per person.<b></center></div></div>
+<div id="c13" class="p"><div id="c333" class="p1"><img src="delhi3.webp" width="100%" height="100%"></div><div id="c1111" class="p111"><br><br><b><center>3 days 2 night package starting @3999 per person.<b></center></div></div>
+<br> <br>
+<div id="mar"><marquee behavior="alternate" onmouseover="stop()" onmouseout="start()"><br><b><h3><i><font size="6" color="red">Grab the Best Deals Here.<br>&nbsp&nbsp&nbsp&nbsp&nbsp BOOK NOW</i></h3></b></marquee></font></div>
+
+</div>
+<div id="c2" class="l">
+<br> <br><h1><center><font color="white">MUMBAI</font></center></h1><br><hr>
+<font color="white" size="4"><p>Mumbai (formerly called Bombay) is a densely populated city on India’s west coast. A financial center, it's India's largest city. On the Mumbai Harbour waterfront stands the iconic Gateway of India stone arch, built by the British Raj in 1924. Offshore, nearby Elephanta Island holds ancient cave temples dedicated to the Hindu god Shiva. The city's also famous as the heart of the Bollywood film industry.</p> <br> <br></font>
+<div id="c11" class="p"><div id="c111" class="p1"><img src="mum2.jpg" width="100%" height="100%"></div><div id="c1111" class="p111"><br><br><b><center>3 days 2 night package starting @2999 per person.<b></center></div></div>
+<div id="c12" class="p"><div id="c222" class="p1"><img src="esl.png" width="100%" height="100%"></div><div id="c1111" class="p111"><br><br><b><center>3 days 2 night package starting @4999 per person.<b></center></div></div>
+<div id="c13" class="p"><div id="c333" class="p1"><img src="mum3.jpg" width="100%" height="100%"></div><div id="c1111" class="p111"><br><br><b><center>3 days 2 night package starting @3999 per person.<b></center></div></div>
+<br> <br>
+<div id="mar"><marquee behavior="alternate" onmouseover="stop()" onmouseout="start()"><br><b><h3><i><font size="6" color="red">Grab the Best Deals Here.<br>&nbsp&nbsp&nbsp&nbsp&nbsp BOOK NOW</i></h3></b></marquee></font></div>
+
+
+</div>
+<div id="c3" class="l">
+<br> <br><h1><center><font color="white">KOLKATA</font></center></h1><br><hr>
+<font color="white" size="4"><p>Kolkata (formerly Calcutta) is the capital of India's West Bengal state. Founded as an East India Company trading post, it was India's capital under the British Raj from 1773–1911. Today it’s known for its grand colonial architecture, art galleries and cultural festivals. It’s also home to Mother House, headquarters of the Missionaries of Charity, founded by Mother Teresa, whose tomb is on site.</p> <br> <br></font>
+<div id="c11" class="p"><div id="c111" class="p1"><img src="k1.webp" width="100%" height="100%"></div><div id="c1111" class="p111"><br><br><b><center>3 days 2 night package starting @2999 per person.<b></center></div></div>
+<div id="c12" class="p"><div id="c222" class="p1"><img src="k2.jpg" width="100%" height="100%"></div><div id="c1111" class="p111"><br><br><b><center>3 days 2 night package starting @4999 per person.<b></center></div></div>
+<div id="c13" class="p"><div id="c333" class="p1"><img src="k3.webp" width="100%" height="100%"></div><div id="c1111" class="p111"><br><br><b><center>3 days 2 night package starting @3999 per person.<b></center></div></div>
+<br> <br>
+<div id="mar"><marquee behavior="alternate" onmouseover="stop()" onmouseout="start()"><br><b><h3><i><font size="6" color="red">Grab the Best Deals Here.<br>&nbsp&nbsp&nbsp&nbsp&nbsp BOOK NOW</i></h3></b></marquee></font></div>
+
+</div>
+<div id="c4" class="l">
+<br> <br><h1><center><font color="white">CHENNAI</font></center></h1><br><hr>
+<font color="white" size="4"><p>Chennai, on the Bay of Bengal in eastern India, is the capital of the state of Tamil Nadu. The city is home to Fort St. George, built in 1644 and now a museum showcasing the city’s roots as a British military garrison and East India Company trading outpost, when it was called Madras. Religious sites include Kapaleeshwarar Temple, adorned with carved and painted gods, and St. Mary’s, a 17th-century Anglican church.</p> <br> <br></font>
+<div id="c11" class="p"><div id="c111" class="p1"><img src="ch1.webp" width="100%" height="100%"></div><div id="c1111" class="p111"><br><br><b><center>3 days 2 night package starting @2999 per person.<b></center></div></div>
+<div id="c12" class="p"><div id="c222" class="p1"><img src="ch2.jpg" width="100%" height="100%"></div><div id="c1111" class="p111"><br><br><b><center>3 days 2 night package starting @4999 per person.<b></center></div></div>
+<div id="c13" class="p"><div id="c333" class="p1"><img src="ch3.png" width="100%" height="100%"></div><div id="c1111" class="p111"><br><br><b><center>3 days 2 night package starting @3999 per person.<b></center></div></div>
+<br> <br>
+<div id="mar"><marquee behavior="alternate" onmouseover="stop()" onmouseout="start()"><br><b><h3><i><font size="6" color="red">Grab the Best Deals Here.<br>&nbsp&nbsp&nbsp&nbsp&nbsp BOOK NOW</i></h3></b></marquee></font></div>
+
+</div>
+
+
+<div id="d">
+<div id="d1" class="but"><center><b> <a href="bill.html" style="text-decoration:none; color:white;">BOOK ONLINE</b></a></center></div>
+<div id="d2" class="but"><center><b><a href="gallery2.html" style="text-decoration:none; color:white;">GALLERY</b></a></center></div>
+</div>
+
+ <div id="bbb">
+<div id="b11" class="r"> <a href="index.html">  <img src="h.png" width="100%" height="100%" id="i1"> </a> </div> 
+<div id="b21" class="r"> <a href="gallery2.html"> <img src="map.png" width="100%" height="100%" id="i2"> </a> </div> 
+<div id="b31" class="r"> <a href="package.html"><img src="pac1.png" width="100%" height="100%" id="i3"></a> </div> 
+<div id="b41" class="r"> <a href="bill.html"><img src="book.png" width="100%" height="100%" id="i4"> </a> </div>
+<div id="b51" class="r"> <a href="contact.html"><img src="contact.png" width="100%" height="100%" id="i5"></a> </div>
+</div>
+
+</body>
+</html>

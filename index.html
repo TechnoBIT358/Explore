@@ -1,0 +1,116 @@
+<html>
+<head>
+<title> index </title>
+<style>
+#a{
+position:absolute;
+top:0%;
+left:0%;
+height:100%;
+width:100%;
+}
+#a1{
+position:absolute;
+top:5%;
+left:5%;
+height:20%;
+width:20%;
+}
+#b
+{
+position:absolute;
+top:40%;
+left:5%;
+height:55%;
+width:5%;
+background:transparent;
+}
+.r{
+position:absolute;
+height:20%;
+width:100%;
+left:0%;
+}
+#b1{
+top:0%;
+}
+
+#b2{
+top:19%;
+}
+#b3{
+top:40%;
+}
+#b4{
+top:62%;
+}
+#b5{
+bottom:0%;
+}
+#c
+{
+position:absolute;
+top:100%;
+left:0%;
+height:60%;
+width:100%;
+background-color:rgba(22,92,137,1);
+
+}
+#f{ position:absolute;
+top:160%;
+left:0%;
+height:25%;
+width:100%;
+background-color:black;
+}
+
+</style>
+<script>
+var a=new Array('a.jpg','a1.jpg','a2.jpg','a3.png');
+var i=0;
+function slider()
+{
+if (i<3)
+{
+i++;
+}
+else
+{
+i=0;
+}
+document.getElementById("m").src=a[i];
+setTimeout("slider()",3000);
+}
+</script>
+</head>
+<body onload="slider()">
+<div id="a"> <img src="a.jpg" width="100%" height="100%" id="m"> </div>
+<div id="a1"> <img src="e.png" width="100%" height="100%" id="m1"> </div>
+
+
+<div id="c">
+<h5>Why Explore?</h5>
+	<p>The leading player in online flight bookings in India, Explore offers great offers, some of the lowest airfares, exclusive discounts and a seamless online booking experience. Flight, hotel and holiday bookings through the desktop or mobile site is a delightfully customer friendly experience, and with just a few clicks you can complete your booking. With features like Instant Discounts, Fare Calendar, MyRewards Program, MyWallet and many more, the overall booking experience with Explore constantly adds value to its product and continues to offer the best to its customers.</p>
+	<h5>Booking Flights with Explore</h5>
+	<p>Book your flights tickets with India&#039;s leading flight booking company since the year 2000. While booking flights with Explore, you can expect the ultimate online booking experience. With premium customer service, 24/7 dedicated helpline for support, and over 5 million delighted customers, Explore takes great pride in enabling customer satisfaction. With a cheapest flight guarantee, book your tickets at the lowest airfares. Avail great offers, exclusive deals for loyal customers and get instant updates for your flight status and fare drops.</p>
+	<h5>Domestic Flights with Explore</h5>
+	<p>Explore is India&#039;s leading player for flight bookings, and have a dominant position in the domestic flights sector. With the cheapest fare guarantee, experience great value at the lowest price. Instant notifications ensure current flight status, instant fare drops, amazing discounts, instant refunds and rebook options, price comparisons and many more interesting features.</p>
+
+
+ </div>
+ 
+ <div id="b">
+<div id="b1" class="r"> <a href="index.html">  <img src="h.png" width="100%" height="100%" id="i1"> </a> </div> 
+<div id="b2" class="r"> <a href="gallery2.html"> <img src="map.png" width="100%" height="100%" id="i2"> </a> </div> 
+<div id="b3" class="r"> <a href="package.html"><img src="pac1.png" width="100%" height="100%" id="i3"></a> </div> 
+<div id="b4" class="r"> <a href="bill.html"><img src="book.png" width="100%" height="100%" id="i4"> </a> </div>
+<div id="b5" class="r"> <a href="contact.html"><img src="contact.png" width="100%" height="100%" id="i5"></a> </div>
+</div> 
+<div id="f">
+<br> <br> <br> <br>
+<hr>
+<center><b><font color="white">Â© Copyright and designed by RUCHI SHARMA</font></b></center>
+</div>
+</body>
+</html>

@@ -1,0 +1,730 @@
+<html>
+<head>
+<title>
+gallery
+</title>
+<style>
+#a
+{
+position:fixed;
+top:10%;
+left:5%;
+height:90%;
+width:90%;
+overflow:hidden;
+border-radius:10px;
+}
+.r{
+position:absolute;
+height:15%;
+width:10%;
+background-color:white;
+cursor:pointer;
+box-shadow:10px 10px 10px gray;
+border-style:solid;
+border-width:5px;
+border-color:white;
+overflow:hidden;
+}
+.r:hover{ opacity:0.8;}
+#a1{
+top:20%;
+left:30%;
+}
+#a2{
+top:30%;
+left:55%;
+}
+#a3{
+top:50%;
+left:20%;
+}
+#a4{
+top:60%;
+left:40%;
+}
+.p11{
+position:absolute;
+top:0%;
+left:0%;
+height:300%;
+width:100%;
+visibility:hidden;
+}
+#p1{
+background-color:rgba(63,83,88,1);
+}
+#p2{
+background-color:rgba(54,116,177,1);
+}
+#p3{
+background-color:rgba(160,190,41,1);
+}
+#p4{
+background-color:rgba(245,165,56,1);
+}
+#info{
+position:absolute;
+top:10%;
+left:5%;
+height:25%;
+width:90%;
+background-color:rgba(45,17,39,1);
+border-radius:10px;
+}
+.vv{
+position:absolute;
+top:35%;
+left:0%;
+height:20%;
+width:100%;
+background-color:gray;
+}
+.t
+{
+position:absolute;
+top:57%;
+left:5%;
+height:22%;
+width:90%;
+background-color:gray;
+}
+.t1
+{
+position:absolute;
+top:57%;
+left:5%;
+height:22%;
+width:90%;
+background-color:gray;
+}
+.t2
+{
+position:absolute;
+top:57%;
+left:5%;
+height:22%;
+width:90%;
+background-color:gray;
+}
+.t3
+{
+position:absolute;
+top:57%;
+left:5%;
+height:22%;
+width:90%;
+background-color:gray;
+}
+
+.i
+{
+position:absolute;
+top:82%;
+height:10%;
+width:14%;
+background-color:gray;
+cursor:pointer;
+border-radius:20px;
+}
+#i1
+{
+left:5%;
+}
+#i2
+{
+left:24%;
+}
+#i3
+{
+left:43%;
+}
+#i4
+{
+left:62%;
+}
+#i5
+{
+right:5%;
+}
+
+#ik1
+{
+left:5%;
+}
+#ik2
+{
+left:24%;
+}
+#ik3
+{
+left:43%;
+}
+#ik4
+{
+left:62%;
+}
+#ik5
+{
+right:5%;
+}
+
+#im1
+{
+left:5%;
+}
+#im2
+{
+left:24%;
+}
+#im3
+{
+left:43%;
+}
+#im4
+{
+left:62%;
+}
+#im5
+{
+right:5%;
+}
+
+#ic1
+{
+left:5%;
+}
+#ic2
+{
+left:24%;
+}
+#ic3
+{
+left:43%;
+}
+#ic4
+{
+left:62%;
+}
+#ic5
+{
+right:5%;
+}
+
+
+
+
+
+
+#i6
+{
+visibility:hidden;
+}
+#i7
+{
+visibility:hidden;
+}
+#i8
+{
+visibility:hidden;
+}
+#i9
+{
+visibility:hidden;
+}
+#i10
+{
+visibility:hidden;
+}
+
+#bb
+{
+position:fixed;
+top:40%;
+left:0%;
+height:55%;
+width:5%;
+background:transparent;
+}
+.r1{
+position:absolute;
+height:20%;
+width:100%;
+left:0%;
+}
+#b11{
+top:0%;
+}
+
+#b21{
+top:19%;
+}
+#b31{
+top:40%;
+}
+#b41{
+top:62%;
+}
+#b51{
+bottom:0%;
+}
+#g
+{
+position:fixed;
+height:5%;
+width:100%;
+left:0%;
+top:1%;
+}
+</style>
+
+<script>
+function showd()
+{
+	document.getElementById("p1").style.visibility="visible";
+	document.getElementById("p2").style.visibility="hidden";
+	document.getElementById("p3").style.visibility="hidden";
+	document.getElementById("p4").style.visibility="hidden";
+}
+function showk()
+{
+	document.getElementById("p2").style.visibility="visible";
+	document.getElementById("p1").style.visibility="hidden";
+	document.getElementById("p3").style.visibility="hidden";
+	document.getElementById("p4").style.visibility="hidden";
+}
+function showm()
+{
+	document.getElementById("p3").style.visibility="visible";
+	document.getElementById("p2").style.visibility="hidden";
+	document.getElementById("p1").style.visibility="hidden";
+	document.getElementById("p4").style.visibility="hidden";
+}
+function showc()
+{
+	document.getElementById("p4").style.visibility="visible";
+	document.getElementById("p1").style.visibility="hidden";
+	document.getElementById("p2").style.visibility="hidden";
+	document.getElementById("p3").style.visibility="hidden";
+}
+function clr()
+{
+	document.getElementById("p1").style.visibility="hidden";
+	document.getElementById("p2").style.visibility="hidden";
+	document.getElementById("p3").style.visibility="hidden";
+	document.getElementById("p4").style.visibility="hidden";
+	
+	document.getElementById("i6").style.visibility="hidden";
+	document.getElementById("i7").style.visibility="hidden";
+	document.getElementById("i8").style.visibility="hidden";
+	document.getElementById("i9").style.visibility="hidden";
+	document.getElementById("i10").style.visibility="hidden";
+	
+	document.getElementById("ik6").style.visibility="hidden";
+	document.getElementById("ik7").style.visibility="hidden";
+	document.getElementById("ik8").style.visibility="hidden";
+	document.getElementById("ik9").style.visibility="hidden";
+	document.getElementById("ik10").style.visibility="hidden";
+	
+	document.getElementById("im6").style.visibility="hidden";
+	document.getElementById("im7").style.visibility="hidden";
+	document.getElementById("im8").style.visibility="hidden";
+	document.getElementById("im9").style.visibility="hidden";
+	document.getElementById("im10").style.visibility="hidden";
+	
+	document.getElementById("ic6").style.visibility="hidden";
+	document.getElementById("ic7").style.visibility="hidden";
+	document.getElementById("ic8").style.visibility="hidden";
+	document.getElementById("ic9").style.visibility="hidden";
+	document.getElementById("ic10").style.visibility="hidden";
+}
+function show1()
+{
+	document.getElementById("i6").style.visibility="visible";
+	document.getElementById("i7").style.visibility="hidden";
+	document.getElementById("i8").style.visibility="hidden";
+	document.getElementById("i9").style.visibility="hidden";
+	document.getElementById("i10").style.visibility="hidden";
+}
+function show2()
+{
+	document.getElementById("i7").style.visibility="visible";
+	document.getElementById("i6").style.visibility="hidden";
+	document.getElementById("i8").style.visibility="hidden";
+	document.getElementById("i10").style.visibility="hidden";
+	document.getElementById("i9").style.visibility="hidden";
+}
+function show3()
+{
+	document.getElementById("i8").style.visibility="visible";
+	document.getElementById("i10").style.visibility="hidden";
+	document.getElementById("i6").style.visibility="hidden";
+	document.getElementById("i7").style.visibility="hidden";
+	document.getElementById("i9").style.visibility="hidden";
+}
+function show4()
+{
+	document.getElementById("i9").style.visibility="visible";
+	document.getElementById("i6").style.visibility="hidden";
+	document.getElementById("i7").style.visibility="hidden";
+	document.getElementById("i10").style.visibility="hidden";
+	document.getElementById("i8").style.visibility="hidden";
+}
+function show5()
+{
+	document.getElementById("i10").style.visibility="visible";
+	document.getElementById("i6").style.visibility="hidden";
+	document.getElementById("i7").style.visibility="hidden";
+	document.getElementById("i9").style.visibility="hidden";
+	document.getElementById("i8").style.visibility="hidden";
+}
+
+
+
+
+function show11()
+{
+	document.getElementById("ik6").style.visibility="visible";
+	document.getElementById("ik7").style.visibility="hidden";
+	document.getElementById("ik8").style.visibility="hidden";
+	document.getElementById("ik9").style.visibility="hidden";
+	document.getElementById("ik10").style.visibility="hidden";
+}
+function show21()
+{
+	document.getElementById("ik7").style.visibility="visible";
+	document.getElementById("ik6").style.visibility="hidden";
+	document.getElementById("ik8").style.visibility="hidden";
+	document.getElementById("ik10").style.visibility="hidden";
+	document.getElementById("ik9").style.visibility="hidden";
+}
+function show31()
+{
+	document.getElementById("ik8").style.visibility="visible";
+	document.getElementById("ik10").style.visibility="hidden";
+	document.getElementById("ik6").style.visibility="hidden";
+	document.getElementById("ik7").style.visibility="hidden";
+	document.getElementById("ik9").style.visibility="hidden";
+}
+function show41()
+{
+	document.getElementById("ik9").style.visibility="visible";
+	document.getElementById("ik6").style.visibility="hidden";
+	document.getElementById("ik7").style.visibility="hidden";
+	document.getElementById("ik10").style.visibility="hidden";
+	document.getElementById("ik8").style.visibility="hidden";
+}
+function show51()
+{
+	document.getElementById("ik10").style.visibility="visible";
+	document.getElementById("ik6").style.visibility="hidden";
+	document.getElementById("ik7").style.visibility="hidden";
+	document.getElementById("ik9").style.visibility="hidden";
+	document.getElementById("ik8").style.visibility="hidden";
+}
+
+
+
+
+function show12()
+{
+	document.getElementById("im6").style.visibility="visible";
+	document.getElementById("im7").style.visibility="hidden";
+	document.getElementById("im8").style.visibility="hidden";
+	document.getElementById("im9").style.visibility="hidden";
+	document.getElementById("im10").style.visibility="hidden";
+}
+function show22()
+{
+	document.getElementById("im7").style.visibility="visible";
+	document.getElementById("im6").style.visibility="hidden";
+	document.getElementById("im8").style.visibility="hidden";
+	document.getElementById("im10").style.visibility="hidden";
+	document.getElementById("im9").style.visibility="hidden";
+}
+function show32()
+{
+	document.getElementById("im8").style.visibility="visible";
+	document.getElementById("im10").style.visibility="hidden";
+	document.getElementById("im6").style.visibility="hidden";
+	document.getElementById("im7").style.visibility="hidden";
+	document.getElementById("im9").style.visibility="hidden";
+}
+function show42()
+{
+	document.getElementById("im9").style.visibility="visible";
+	document.getElementById("im6").style.visibility="hidden";
+	document.getElementById("im7").style.visibility="hidden";
+	document.getElementById("im10").style.visibility="hidden";
+	document.getElementById("im8").style.visibility="hidden";
+}
+function show52()
+{
+	document.getElementById("im10").style.visibility="visible";
+	document.getElementById("im6").style.visibility="hidden";
+	document.getElementById("im7").style.visibility="hidden";
+	document.getElementById("im9").style.visibility="hidden";
+	document.getElementById("im8").style.visibility="hidden";
+}
+
+
+
+
+function show13()
+{
+	document.getElementById("ic6").style.visibility="visible";
+	document.getElementById("ic7").style.visibility="hidden";
+	document.getElementById("ic8").style.visibility="hidden";
+	document.getElementById("ic9").style.visibility="hidden";
+	document.getElementById("ic10").style.visibility="hidden";
+}
+function show23()
+{
+	document.getElementById("ic7").style.visibility="visible";
+	document.getElementById("ic6").style.visibility="hidden";
+	document.getElementById("ic8").style.visibility="hidden";
+	document.getElementById("ic10").style.visibility="hidden";
+	document.getElementById("ic9").style.visibility="hidden";
+}
+function show33()
+{
+	document.getElementById("ic8").style.visibility="visible";
+	document.getElementById("ic10").style.visibility="hidden";
+	document.getElementById("ic6").style.visibility="hidden";
+	document.getElementById("ic7").style.visibility="hidden";
+	document.getElementById("ic9").style.visibility="hidden";
+}
+function show43()
+{
+	document.getElementById("ic9").style.visibility="visible";
+	document.getElementById("ic6").style.visibility="hidden";
+	document.getElementById("ic7").style.visibility="hidden";
+	document.getElementById("ic10").style.visibility="hidden";
+	document.getElementById("ic8").style.visibility="hidden";
+}
+function show53()
+{
+	document.getElementById("ic10").style.visibility="visible";
+	document.getElementById("ic6").style.visibility="hidden";
+	document.getElementById("ic7").style.visibility="hidden";
+	document.getElementById("ic9").style.visibility="hidden";
+	document.getElementById("ic8").style.visibility="hidden";
+}
+
+
+
+</script>
+</head>
+<body bgcolor="black">
+<div id="g"><FONT COLOR="WHITE"size="6"><center></h1></b>GALLERY</FONT></center></h1></b></div>
+<div id="a"><img src="india.jpg" width="100%" height="100%">
+
+<div id="a1" class="r" onclick="showd()"><img src="lo.jpeg" width="100%" height="100%" ></div>
+<div id="a2" class="r" onclick="showk()"><img src="ko.jpg" width="100%" height="100%" ></div>
+<div id="a3" class="r" onclick="showm()"><img src="mum3.jpg" width="100%" height="100%"></div>
+<div id="a4" class="r" onclick="showc()"><img src="ch2.jpg" width="100%" height="100%"></div>
+
+</div>
+<div id="p1" class="p11"> 
+<button onclick="clr()">x</button>
+<br> <br><h1><center><font color="white">DELHI</font></center></h1><br><hr>
+<div id="info"> 
+<font color="white" size="4"><br>
+<h4><center><font color="white">Top 5 places in Delhi.</font></center></h4><br>
+<center><p>
+1. Lal Qila - Travel back to history with this amazing piece of architecture. There is a museum inside the fort and also shops to buy souvenirs.<br>
+
+2. Street Food at Chandni Chowk including Karim's Lane - From jalebis made in desi ghee to chaat to parathas and the best part if you are a non vegetarian - Karim's with its mouth watering kebabs, qormas and what not. this place is the best place to eat in India - without competition.
+<br>
+3. Humayun's tomb with Nizamuddin street food -  Humayun's tomb is the most beautiful architectural building in Delhi with a rich history dating back to centuries. Adjacent to Humayun's tomb is the famous food street at Nizamuddin. Not to miss.
+<br>
+4. Qutub Minar - Just because its Qutub minar
+<br>
+5. Shopping at Sarojini Nagar - Sarojini nagar market along with babu market must be the largest garment shopping hub in the country. In here, you will find things at prices quarter of those at malls and other places. Half of Delhi shops here, although many dont admit :) Even without any shopping, this place is worth visiting once.
+
+
+</p></center> <br> <br></font>
+</div>
+
+<div id="v" class="vv"> 
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/kzhkN9vHI0o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<div id="i1"  class="i" onclick="show1()">
+<img src="blue.jpg" height="100%" width="100%"> 
+</div>
+<div id="i2" class="i" onclick="show2()">
+<img src="st.jpg" height="100%" width="100%">
+</div>
+<div id="i3" class="i" onclick="show3()">
+<img src="q1.jpg" height="100%" width="100%">
+ </div>
+<div id="i4" class="i" onclick="show4()">
+<img src="ak.jpg" height="100%" width="100%">
+ </div>
+ <div id="i5" class="i" onclick="show5()">
+<img src="i.jpg" height="100%" width="100%">
+ </div>
+ <div id="i11" class="t"><img src="blue.jpg" height="100%" width="100%"></div>
+<div id="i6" class="t" ><img src="blue.jpg" height="100%" width="100%"></div>
+<div id="i7" class="t" ><img src="st.jpg" height="100%" width="100%"></div>
+<div id="i8" class="t" ><img src="q1.jpg" height="100%" width="100%"></div>
+<div id="i9" class="t" ><img src="ak.jpg" height="100%" width="100%"></div>
+<div id="i10" class="t" ><img src="i.jpg" height="100%" width="100%"></div>
+</div>
+
+
+<div id="p2" class="p11"> 
+<button onclick="clr()">x</button>
+<br> <br><h1><center><font color="white">KOLKATA</font></center></h1><br><hr>
+<div id="info"> 
+<font color="white" size="4"><br>
+<h4><center><font color="white">Top 5 places in Kolkata.</font></center></h4><br>
+<center><p>
+Princep ghat - It's very peaceful. Go there and just sit and watch the waters. It will calm ur nerves or will relieve u from ur stress.
+<br>Victoria Memorial - A very beautiful place to visit.
+<br>Park street - a street filled with awesome restaurants and bars. An awesome place to hang out in the evening. If going there then must visit Peter cat or mocambo for some delicious continental cuisine.
+<br>M Bar and kitchen - for amazing night out with friends. Really good music and wide arrange of drinks.
+<br>Southern Avenue - for cheap and best eats. Ull find almost everything related to food and also not heavy on wallet.
+
+</p></center> <br> <br></font>
+</div>
+
+<div id="v1" class="vv"> 
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/2VqfVBuC2pE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<div id="ik1" class="i" onclick="show11()">
+<img src="v.jpg" height="100%" width="100%"> 
+</div>
+<div id="ik2" class="i" onclick="show21()">
+<img src="v1.jpg" height="100%" width="100%">
+</div>
+<div id="ik3" class="i" onclick="show31()">
+<img src="v2.jpg" height="100%" width="100%">
+ </div>
+<div id="ik4" class="i" onclick="show41()">
+<img src="v3.jpg" height="100%" width="100%">
+ </div>
+ <div id="ik5" class="i" onclick="show51()">
+<img src="v4.jpg" height="100%" width="100%">
+ </div>
+ <div id="ik11" class="t1"><img src="v.jpg" height="100%" width="100%"></div>
+<div id="ik6" class="t1" ><img src="v.jpg" height="100%" width="100%"></div>
+<div id="ik7" class="t1" ><img src="v1.jpg" height="100%" width="100%"></div>
+<div id="ik8" class="t1" ><img src="v2.jpg" height="100%" width="100%"></div>
+<div id="ik9" class="t1" ><img src="v3.jpg" height="100%" width="100%"></div>
+<div id="ik10" class="t1" ><img src="v4.jpg" height="100%" width="100%"></div>
+</div>
+
+
+<div id="p3" class="p11">
+<button onclick="clr()">x</button>
+
+<br> <br><h1><center><font color="white">MUMBAI</font></center></h1><br><hr>
+<div id="info"> 
+<font color="white" size="4"><br>
+<h4><center><font color="white">Top 5 places in Mumbai.</font></center></h4><br>
+<center><p>
+1. Door OF INDIA
+<br>
+A standout amongst the most well known point of interest of India is built amid 1924, as a major aspect of British Raj festivities in Mumbai. In spite of the fact that constructed hundreds of years back regardless it stays as the primary fascination of the country with its sublimely fabricate structure.
+<br>
+2. JUHU BEACH
+<br>
+A standout among st the most delightful shorelines in India arranged in Mumbai, effectively available by any method of transport. It is most swarmed shoreline, with parcel of extension for neighborhood sustenance.
+<br>
+3. FILM CITY IN GOREGAON
+<br>
+Contained studios and manufactured film sets, film city remains as the eminent feature of Mumbai, which is regularly observed to be swarmed with visitors from over the world.
+<br>
+4. MARINE DRIVE
+<br>
+One of the beautiful roads in Mumbai, which is about 4 km long is in south Mumbai, popularly referred as ‘Queen’s Necklace’.
+<br>
+5. SANJAY GANDHI NATIONAL PARK/BORIVALI NATIONAL PARK
+<br>
+It still stands as one of the largest wildlife reserve protected in North India.
+
+</p></center> <br> <br></font>
+</div>
+
+<div id="v2" class="vv"> 
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/duZo4ZKi1vI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<div id="im1" class="i" onclick="show12()">
+<img src="m1.jpg" height="100%" width="100%"> 
+</div>
+<div id="im2" class="i" onclick="show22()">
+<img src="m2.jpg" height="100%" width="100%">
+</div>
+<div id="im3" class="i" onclick="show32()">
+<img src="m3.jpg" height="100%" width="100%">
+ </div>
+<div id="im4" class="i" onclick="show42()">
+<img src="m4.jpg" height="100%" width="100%">
+ </div>
+ <div id="im5" class="i" onclick="show52()">
+<img src="m5.jpg" height="100%" width="100%">
+ </div>
+ <div id="im11" class="t2"><img src="m1.jpg" height="100%" width="100%"></div>
+<div id="im6" class="t2" ><img src="m1.jpg" height="100%" width="100%"></div>
+<div id="im7" class="t2" ><img src="m2.jpg" height="100%" width="100%"></div>
+<div id="im8" class="t2" ><img src="m3.jpg" height="100%" width="100%"></div>
+<div id="im9" class="t2" ><img src="m4.jpg" height="100%" width="100%"></div>
+<div id="im10" class="t2" ><img src="m5.jpg" height="100%" width="100%"></div>
+</div>
+
+<div id="p4" class="p11"> 
+<button onclick="clr()">x</button>
+<br> <br><h1><center><font color="white">CHENNAI</font></center></h1><br><hr>
+<div id="info"> 
+<font color="white" size="4"><br>
+<h4><center><font color="white">Top 5 places in Chennai.</font></center></h4><br>
+<center><p>
+MGR Memorial - It was built in memory of former Cheif Minister of Tamil Nadu, M. G. Ramachandran. Now J. Jayalalitha also buried at the same site.
+<br>Govt Museum - I can proudly say that it is the Second Oldest museum in India. In this museum, you can see a variety of artifacts sculptures, manuscripts and famous Amravati paintings.
+<br>Chennai Central - If you are travelling by train, then this must be the first place you able to see in Chennai. Yeah again the same philosophy, this is also the oldest one. so keep it clean and use wisely.
+<br>Kapaleeswarar temple - Here comes my favorite destination. Again the same old building story. Ah, yeah it is a Shivan temple and its is famous for their prasadham(kind of divine food given to everyone after prayer).
+<br>Express Avenue - It is one of the big and famous mall in chennai. Usually we get too much of crowd in weekends like couples, dubsmasher and musically groups, childern, family, etcera..
+
+</p></center> <br> <br></font>
+</div>
+
+<div id="v3" class="vv"> 
+<iframe width="100%" height="100%" src="https://www.youtube.com/embed/f4UmWqADVAc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+<div id="ic1" class="i" onclick="show13()">
+<img src="cc.jpg" height="100%" width="100%"> 
+</div>
+<div id="ic2" class="i" onclick="show23()">
+<img src="cc1.jpg" height="100%" width="100%">
+</div>
+<div id="ic3" class="i" onclick="show33()">
+<img src="cc2.jpg" height="100%" width="100%">
+ </div>
+<div id="ic4" class="i" onclick="show43()">
+<img src="cc3.jpg" height="100%" width="100%">
+ </div>
+ <div id="ic5" class="i" onclick="show53()">
+<img src="cc4.jpg" height="100%" width="100%">
+ </div>
+ <div id="ic11" class="t3"><img src="cc.jpg" height="100%" width="100%"></div>
+<div id="ic6" class="t3" ><img src="cc.jpg" height="100%" width="100%"></div>
+<div id="ic7" class="t3" ><img src="cc1.jpg" height="100%" width="100%"></div>
+<div id="ic8" class="t3" ><img src="cc2.jpg" height="100%" width="100%"></div>
+<div id="ic9" class="t3" ><img src="cc3.jpg" height="100%" width="100%"></div>
+<div id="ic10" class="t3" ><img src="cc4.jpg" height="100%" width="100%"></div>
+</div>
+
+ <div id="bb">
+<div id="b11" class="r1"> <a href="index.html">  <img src="h.png" width="100%" height="100%" id="i1"> </a> </div> 
+<div id="b21" class="r1"> <a href="gallery2.html"> <img src="map.png" width="100%" height="100%" id="i2"> </a> </div> 
+<div id="b31" class="r1"> <a href="package.html"><img src="pac1.png" width="100%" height="100%" id="i3"></a> </div> 
+<div id="b41" class="r1"> <a href="bill.html"><img src="book.png" width="100%" height="100%" id="i4"> </a> </div>
+<div id="b51" class="r1"> <a href="contact.html"><img src="contact.png" width="100%" height="100%" id="i5"></a> </div>
+</div>
+</body>
+</html>
